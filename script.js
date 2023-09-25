@@ -130,8 +130,7 @@ signupForm.addEventListener("submit", function (event) {
       return;
     }
     if (email === "admin123@gmail.com" && password === "00000000")
-      signupForm.action = "ticket_booking.html";
-    signupForm.submit();
+     window.location.href = "ticket_booking.html"
   }
 
   // Allow the form to submit if validation passes
