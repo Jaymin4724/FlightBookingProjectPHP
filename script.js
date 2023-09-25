@@ -7,31 +7,6 @@ const main = document.querySelector(".main");
 const submitbutton = document.querySelector("#submitbutton");
 const switches = document.querySelectorAll(".switch");
 
-// window.onload = function () {
-//   // Function to hide the welcome message and show the main container
-//   function showMain() {
-//     const welcomeMessage = document.querySelector(".welcome-message");
-//     const main = document.querySelector(".main");
-
-//     welcomeMessage.style.opacity = 0; // Hide the welcome message
-//     main.style.display = "block"; // Show the main container
-//   }
-
-//   // Create a dynamic welcome message element
-//   const welcomeMessage = document.createElement("div");
-//   welcomeMessage.className = "welcome-message";
-//   welcomeMessage.innerHTML = "<h1>Welcome to our flight booking project</h1>";
-
-//   // Append the welcome message to the body
-//   document.body.appendChild(welcomeMessage);
-
-//   // Use setTimeout to trigger the showMain function after 5 seconds
-//   setTimeout(showMain, 1000);
-// };
-
-
-
-
 // SIGN-UP AND LOGIN BUTTON
 
 function switchForm(formType) {
@@ -154,6 +129,8 @@ signupForm.addEventListener("submit", function (event) {
       alert("Password must be at least 8 characters long.");
       return;
     }
+    if (email === "admin123@gmail.com" && password === "00000000")
+      signupForm.action = "ticket_booking.html";
     signupForm.submit();
   }
 
