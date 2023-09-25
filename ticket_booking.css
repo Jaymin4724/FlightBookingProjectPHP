@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color:rgba(65, 145, 151,0.4);
+}
+
+
+.background {
+    background-image: url('bg0.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex: 5;
+}
+
+.header {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+}
+
+.header h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+    margin-right: 2%;
+    margin-top: 1%;
+    padding: 1%;
+    background-color: rgba(128, 128, 128, 0.3);
+    color: #213555;
+}
+
+.bottom {
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5px 50px 10px 50px;
+    gap: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border:3px solid  #053b50 ;
+    padding: 10px;
+}   
+
+.personal-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.booking-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input,
+select{
+    border-radius: 3px;
+    border-style: none;
+    height: 28px;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 5px;
+    background-color: #053b50;
+    outline-color: aliceblue;
+    color:white;
+}
+
+button{
+    background-color:whitesmoke;
+    color: #053b50;
+    font-weight: bolder;
+    border: none;
+    height: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+::placeholder{
+    color: rgba(255,255,255,0.8);
+}

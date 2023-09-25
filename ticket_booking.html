@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Booking Page</title>
+</head>
+<link rel="stylesheet" href="ticket_booking.css">
+
+<body>
+    <div class="background">
+        <div class="header">
+            <h1>AirIndia.com</h1>
+        </div>
+    </div>
+    <div class="bottom">
+        <!-- Personal Details -->
+        <div class="personal-details">
+            <h2 style="text-align: center; margin-bottom:5px;">Personal Details</h2>
+            <input type="text" id="firstname" name="firstname" placeholder=" Firstname">
+
+            <input type="text" id="lastname" name="lastname" placeholder=" Lastname">
+
+            <input type="number" id="age" name="age" placeholder=" Age">
+
+            <select id="gender" name="gender">
+                <option value="gender" hidden selected disabled>Select gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <input type="tel" id="phone" name="phone" placeholder=" Contactno.">
+
+            <input type="email" id="email" name="email" placeholder=" Email">
+        </div>
+
+        <!-- Booking Details -->
+        <div class="booking-details">
+            <h2 style="text-align: center; margin-bottom:5px;">Booking Details</h2>
+            <select id="from" name="from">
+                <option value="from" hidden selected disabled>From</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Chhattisgarh">Chhattisgarh</option>
+                <option value="Goa">Goa</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Manipur">Manipur</option>
+                <option value="Meghalaya">Meghalaya</option>
+                <option value="Mizoram">Mizoram</option>
+                <option value="Nagaland">Nagaland</option>
+                <option value="Odisha">Odisha</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Sikkim">Sikkim</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Tripura">Tripura</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="Uttarakhand">Uttarakhand</option>
+                <option value="West Bengal">West Bengal</option>
+            </select>
+
+            <select id="to" name="to">
+                <option value="to" hidden selected disabled>To</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Chhattisgarh">Chhattisgarh</option>
+                <option value="Goa">Goa</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Manipur">Manipur</option>
+                <option value="Meghalaya">Meghalaya</option>
+                <option value="Mizoram">Mizoram</option>
+                <option value="Nagaland">Nagaland</option>
+                <option value="Odisha">Odisha</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Sikkim">Sikkim</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Tripura">Tripura</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="Uttarakhand">Uttarakhand</option>
+                <option value="West Bengal">West Bengal</option>
+            </select>
+            <div
+                style="display:flex;align-items: center;gap:5px;background-color:#053b50;color:white;padding-left:5px; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                <label>Class:</label>
+                <input type="radio" id="economy" name="class" value="economy">
+                <label for="economy">Economy</label>
+                <input type="radio" id="business" name="class" value="business">
+                <label for="business">Business</label>
+            </div>
+            <div
+                style="background-color:#053b50;color:white;padding-left:5px; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date">
+            </div>
+
+            <select id="timeslot" name="timeslot">
+                <option value="time" hidden selected disabled>Select slot</option>
+                <option value="12:00-14:00">12:00 PM - 2:00 PM</option>
+                <option value="14:00-16:00">2:00 PM - 4:00 PM</option>
+                <option value="16:00-18:00">4:00 PM - 6:00 PM</option>
+                <option value="18:00-20:00">6:00 PM - 8:00 PM</option>
+            </select>
+
+            <button onclick="validateForm()">BOOK YOUR FLIGHT</button>
+        </div>
+    </div>
+    <script src="ticket_booking.js"></script>
+</body>
+
+</html>

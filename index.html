@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- <div class="welcome-message">
+        <h1>Welcome to our flight booking project</h1>
+    </div> -->
+    <!-- <div class="headingnew">
+        <p>AirIndia.com</p>
+    </div> -->
+    <div class="main">
+        <div class="container">
+            <div class="buttons">
+                <button name="signup" id="btn1" class="button switch"
+                    style="background-color:rgb(243, 159, 90); height:32px;font-size: large;"
+                    onclick="switchForm('signup')">
+                    Sign-Up
+                </button>
+                <button name="login" id="btn2" class="button switch" style="height:32px;font-size: large;"
+                    onclick="switchForm('login')">
+                    Login
+                </button>
+            </div>
+            <div class=" heading">
+                <h2 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><span
+                        id="heading">Sign-Up</span> For FREE
+                </h2>
+            </div>
+            <form id="signupForm" method="post" class="fields" action="signup.php">
+                <input type="text" name="firstname" placeholder=" Firstname" class="signupfields" id="firstname"
+                    style="border-radius: 3px; border-style: none;height: 28px;font-size: medium;padding-left:5px; ">
+                <input type="text" name="lastname" placeholder=" Lastname" class="signupfields" id="lastname"
+                    style="border-radius: 3px; border-style: none;height: 28px;font-size: medium;padding-left:5px;">
+                <input type="tel" name="phoneno" placeholder=" ContactNo." class="signupfields" id="phoneno"
+                    style="border-radius: 3px; border-style: none;height: 28px;font-size: medium;padding-left:5px;">
+                <input type="email" name="email" placeholder=" Email" id="email"
+                    style="border-radius: 3px; border-style: none;height: 28px;font-size: medium;padding-left:5px;">
+                <div style="display: flex; gap:5px;align-items: center">
+                    <input type="password" name="password" placeholder=" Password" id="password"
+                        style="border-radius: 3px; border-style: none;height: 28px;font-size: medium;padding-left:5px;flex:1;">
+                    <span id="showHide" onclick="togglePasswordVisibility()" style="padding:1.5px;"><i
+                            class="fa-solid fa-eye"></i></span>
+                </div>
+                <input type="submit" name="signup" value="Sign-Up" class="button"
+                    style="height: 32px;border-style: none;border-radius: 3px;background-color:rgb(243, 159, 90);font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: large;"
+                    id="submitbutton" ;>
+            </form>
+        </div>
+    </div>
+    <script src=" script.js"></script>
+    <!-- <script>
+        // Add this function to hide the welcome message and show the main container
+        function showMain() {
+            const welcomeMessage = document.querySelector(".welcome-message");
+            // const main = document.querySelector(".main");
+
+            welcomeMessage.style.opacity = 0; // Hide the welcome message
+            main.classList.remove("hidden"); // Show the main container
+        }
+
+        // Use setTimeout to trigger the showMain function after 5 seconds
+        setTimeout(showMain, 2000);
+    </script> -->
+</body>
+
+</html>
