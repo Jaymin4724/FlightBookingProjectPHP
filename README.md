@@ -1,2 +1,5 @@
 # FlightBookingProject_PHP
-You have to connect with xampp for database connectivity
+--> use XMAPP ( if you want to run it properly ) 
+--> Try to login : 
+  --> id : admin123@gmail.com
+  --> password : 00000000
